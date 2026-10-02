@@ -16,18 +16,20 @@
   --line:#e5dac9;
 }
 * { box-sizing:border-box; }
-html { scroll-behavior:smooth; background:#f3eee5; }
+html { scroll-behavior:smooth; background:#fff; }
 body {
   margin:0;
-  background:#f3eee5;
+  background:#fff;
+  overflow-x:hidden;
   color:var(--ink);
   font-family:Inter,Arial,Helvetica,sans-serif;
 }
 .page {
-  width:min(100%,850px);
-  margin:0 auto;
+  width:100%;
+  max-width:none;
+  margin:0;
   background:#fff;
-  box-shadow:0 0 44px rgba(0,0,0,.10);
+  box-shadow:none;
 }
 .section {
   position:relative;
