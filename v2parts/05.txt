@@ -1,0 +1,5 @@
+modal){modal.classList.remove('open');modal.setAttribute('aria-hidden','true')}});
+document.getElementById('orderForm').addEventListener('submit',e=>{e.preventDefault();const data={mode:mode.value,name:name.value,phone:phone.value,city:city.value,district:district.value,address:address.value,qty:qty.value,note:note.value,createdAt:new Date().toISOString()};localStorage.setItem('butterfly_last_order',JSON.stringify(data));if(mode.value==='iyzico'){location.href='https://iyzi.link/AKxREg'}else{modal.querySelector('.modal-card').innerHTML='<div style="padding:28px 10px;text-align:center"><div class="eyebrow">Sipariş alındı</div><h3 style="font-family:var(--serif);font-size:2.4rem;color:var(--navy);margin:10px 0">Teşekkür ederiz.</h3><p class="lead" style="margin:auto">Kapıda ödeme tercihiniz kaydedildi. Sipariş bilgilerinizi kontrol etmek için sizinle iletişime geçilebilir.</p><button class="btn btn-ivory" onclick="location.reload()" style="margin-top:24px">Sayfaya dön</button></div>'}});
+</script>
+</body>
+</html>
